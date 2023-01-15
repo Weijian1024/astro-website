@@ -59,6 +59,7 @@ export default {};
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 40px;
     .img {
       width: 70px;
       height: 70px;
@@ -84,7 +85,7 @@ export default {};
     }
   }
   .contact {
-    margin-top: 20px;
+    margin-top: 50px;
     ul {
       padding: 0;
       li {
@@ -98,11 +99,11 @@ export default {};
     }
   }
   .skill {
-    margin-top: 40px;
+    margin-top: 70px;
     .title {
       h1 {
         font-size: 40px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
       }
     }
     ul {

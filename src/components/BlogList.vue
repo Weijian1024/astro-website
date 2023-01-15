@@ -113,56 +113,103 @@
 </template>
 
 <script>
-import axios from "axios";
+// import axios from "axios";
 import CategoryBar from "../components/CategoryBar.vue";
 export default {
   data() {
     return {
-      cssBlogs: [],
-      jsBlogs: [],
-      vueBlogs: [],
+      cssBlogs: [
+        {
+          id: "5",
+          tag: "Css",
+          time: "30 Jan 2023",
+          title: "HTML CSS JavaScript实现明暗模式切换",
+          describe:
+            "如何利用Css JavaScript实现网站的明暗模式切换,会使用到css自定义属性.",
+          path: "switchDark",
+        },
+        {
+          id: "2",
+          tag: "Css",
+          time: "6 Feb 2022",
+          title: "为伪元素添加点击事件pointer-event等.",
+          describe: "Css是门玄学,这篇博客总结了我在开发过程中碰到的问题.",
+          path: "switchDark",
+        },
+      ],
+      jsBlogs: [
+        {
+          id: "3",
+          tag: "JavaScript",
+          time: "6 Feb 2022",
+          title: "title",
+          describe:
+            " In this CSS beginner tutorial,we'll be creating a hamburger menu.",
+          path: "switchDark",
+        },
+      ],
+      vueBlogs: [
+        {
+          id: "4",
+          tag: "Vue",
+          time: "6 Feb 2022",
+          title: "title",
+          describe:
+            " In this CSS beginner tutorial,we'll be creating a hamburger menu.",
+          path: "switchDark",
+        },
+      ],
       reactBlogs: [],
-      otherBlogs: [],
+      otherBlogs: [
+        {
+          id: 1,
+          tag: "other",
+          time: "20 Jan 2023",
+          title: "我的第一篇博客",
+          describe: "主要介绍Astro框架的使用和如何利用Netlify部署项目.",
+          path: "firstBlog",
+        },
+      ],
     };
   },
   components: { CategoryBar },
   methods: {
     //从json文件夹中提前数据 并分类
-    async getBlogs() {
-      await axios.get("../../public/json/blogs.json").then((res) => {
-        let { data } = res;
-        data.forEach((e) => {
-          switch (e.tag) {
-            case "Css":
-              this.cssBlogs.push(e);
-              break;
-            case "JavaScript":
-              this.jsBlogs.push(e);
-              break;
-            case "Vue":
-              this.vueBlogs.push(e);
-              break;
-            case "other":
-              this.otherBlogs.push(e);
-              break;
-            default:
-              break;
-          }
-        });
-      });
-      //反转数组  让最新的出现在前面
-      this.cssBlogs.reverse();
-      this.jsBlogs.reverse();
-      this.vueBlogs.reverse();
-      this.otherBlogs.reverse();
-    },
+    // async getBlogs() {
+    //   await axios.get("../../public/json/blogs.json").then((res) => {
+    //     let { data } = res;
+    //     data.forEach((e) => {
+    //       switch (e.tag) {
+    //         case "Css":
+    //           this.cssBlogs.push(e);
+    //           break;
+    //         case "JavaScript":
+    //           this.jsBlogs.push(e);
+    //           break;
+    //         case "Vue":
+    //           this.vueBlogs.push(e);
+    //           break;
+    //         case "other":
+    //           this.otherBlogs.push(e);
+    //           break;
+    //         default:
+    //           break;
+    //       }
+    //     });
+    //   });
+    //   //反转数组  让最新的出现在前面
+    //   this.cssBlogs.reverse();
+    //   this.jsBlogs.reverse();
+    //   this.vueBlogs.reverse();
+    //   this.otherBlogs.reverse();
+    // },
     //跳转至博客页
     // gotoBlog() {
     //   history.push("/blog");
     // },
   },
   mounted() {
-    this.getBlogs();
+    // this.getBlogs();
   },
 };
 </script>

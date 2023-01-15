@@ -25,6 +25,51 @@ export default {
     return {
       id: "",
       info: {},
+      blogs: [
+        {
+          id: "5",
+          tag: "Css",
+          time: "30 Jan 2023",
+          title: "HTML CSS JavaScript实现明暗模式切换",
+          describe:
+            "如何利用Css JavaScript实现网站的明暗模式切换,会使用到css自定义属性.",
+          path: "switchDark",
+        },
+        {
+          id: "2",
+          tag: "Css",
+          time: "6 Feb 2022",
+          title: "为伪元素添加点击事件pointer-event等.",
+          describe: "Css是门玄学,这篇博客总结了我在开发过程中碰到的问题.",
+          path: "switchDark",
+        },
+        {
+          id: "3",
+          tag: "JavaScript",
+          time: "6 Feb 2022",
+          title: "title",
+          describe:
+            " In this CSS beginner tutorial,we'll be creating a hamburger menu.",
+          path: "switchDark",
+        },
+        {
+          id: "4",
+          tag: "Vue",
+          time: "6 Feb 2022",
+          title: "title",
+          describe:
+            " In this CSS beginner tutorial,we'll be creating a hamburger menu.",
+          path: "switchDark",
+        },
+        {
+          id: 1,
+          tag: "other",
+          time: "20 Jan 2023",
+          title: "我的第一篇博客",
+          describe: "主要介绍Astro框架的使用和如何利用Netlify部署项目.",
+          path: "firstBlog",
+        },
+      ],
     };
   },
   methods: {
@@ -41,13 +86,8 @@ export default {
       return 0;
     },
     //发起请求
-    async getMd() {
-      await axios.get("../../public/json/blogs.json").then((res) => {
-        let data = res.data;
-        console.log("11111111111111111111111111" + data);
-        this.info = data.filter((i) => i.id == this.id)[0];
-        console.log("22222222222222222222222" + this.info);
-      });
+    getMd() {
+      this.info = this.blogs.filter((i) => i.id == this.id)[0];
     },
   },
   mounted() {

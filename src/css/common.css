@@ -28,13 +28,13 @@ body.dark-mode {
   --dark-nav-bg:#242931;
   --dark-bloglist-font:#7c7c7c;
   --dark-bloglist-bar:#8661fc;
-  background:url(../../public/images/dark.png);
+  /* background:url(../../public/images/dark.png); */
   --dark-blog-title-time:#646f82;
 }
 
 body {
-  /* background-color: var(--dark-body-bg, #fff); */
-  background:url(../../public/images/white.png);
+  background-color: var(--dark-body-bg, #fee5d6);
+  /* background:url(../../public/images/white.png); */
   /* background-size: cover; */
 }
 article p{
