@@ -38,12 +38,12 @@ export default {
       if (r != null) {
         return decodeURI(r[2]);
       }
-      return null;
+      return 0;
     },
     //发起请求
     async getMd() {
       await axios.get("../../public/json/blogs.json").then((res) => {
-        let { data } = res;
+        let data = res.data;
         this.info = data.filter((i) => i.id == this.id)[0];
       });
     },
