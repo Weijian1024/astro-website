@@ -44,7 +44,9 @@ export default {
     async getMd() {
       await axios.get("../../public/json/blogs.json").then((res) => {
         let data = res.data;
+        console.log("11111111111111111111111111" + data);
         this.info = data.filter((i) => i.id == this.id)[0];
+        console.log("22222222222222222222222" + this.info);
       });
     },
   },
