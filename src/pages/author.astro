@@ -1,0 +1,20 @@
+---
+import "../css/common.css";
+import Header from '../components/Header.vue'
+import Footer from '../components/Footer.vue'
+import AuthorInfo from '../components/AuthorInfo.vue'
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />		
+		<link rel="icon" type="image/svg+xml" href="/images/icon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>About Author</title>
+	</head>
+	<body>
+		<Header active="3" client:load></Header>
+		<AuthorInfo></AuthorInfo>
+		<Footer></Footer>
+	</body>
+</html>

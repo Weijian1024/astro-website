@@ -1,0 +1,27 @@
+---
+import "../css/common.css";
+import Header from '../components/Header.vue'
+import BlogList from '../components/BlogList.vue'
+import BlogCategory from '../components/BlogCategory.vue'
+import Footer from '../components/Footer.vue'
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/images/icon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Winston Zhong-Front End Developer</title>
+	</head>
+	<body>
+		<!-- 导航栏 -->
+		<Header active="0" client:load />
+		<!-- 博客分类 -->
+		<BlogCategory client:load/>
+		<!-- 博客列表 -->
+		<BlogList client:load>	</BlogList>
+		<Footer/>
+	</body>
+</html>

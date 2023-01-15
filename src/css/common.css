@@ -1,0 +1,52 @@
+
+@media(min-width: 1320px){
+    html {
+       font-size: 10px;  
+    }
+}
+html{
+  width: 100%;
+	font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica;
+    scroll-behavior:smooth;
+    min-height: 100vh;
+    position: relative;
+}
+*{
+	transition: background-color 0.3s ease-out;
+	transition: background 0.3s ease-out;
+}
+a{
+    text-decoration: none;
+    color: unset;
+}
+li{
+    list-style-type: none;
+}
+/* 深色模式下的颜色 */
+body.dark-mode {
+  --dark-body-bg: #101721;
+  --dark-nav-bg:#242931;
+  --dark-bloglist-font:#7c7c7c;
+  --dark-bloglist-bar:#8661fc;
+  background:url(../../public/images/dark.png);
+  --dark-blog-title-time:#646f82;
+}
+
+body {
+  /* background-color: var(--dark-body-bg, #fff); */
+  background:url(../../public/images/white.png);
+  /* background-size: cover; */
+}
+article p{
+  font-size: 20px;
+  line-height: 2;
+  word-break: break-word; 
+}
+@media (max-width:640px) {
+  article p{
+    font-size: 17px;
+    line-height: 1.7;
+  }
+}
+
+	

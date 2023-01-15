@@ -1,0 +1,22 @@
+---
+import "../css/common.css";
+import Header from '../components/Header.vue'
+import Footer from '../components/Footer.vue'
+import ComponentsNone from '../components/ComponentsNone.vue'
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/images/icon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Components Library</title>
+	</head>
+	<body>
+		<!-- 导航栏 -->
+		<Header active="1" client:load />
+        <ComponentsNone/>
+		<Footer/>
+	</body>
+</html>

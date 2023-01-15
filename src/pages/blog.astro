@@ -1,0 +1,35 @@
+---
+import "../css/common.css";
+import Footer from '../components/Footer.vue'
+import Header from '../components/Header.vue'
+import BlogTitle from '../components/BlogTitle.vue'
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/images/icon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<style>
+		article{
+			width: min(110ch, 90vw);
+			margin-inline: auto;
+			color: var(--dark-bloglist-font,#373737);
+			padding-bottom: 5rem;
+		}
+	</style>
+	<body>
+		<Header client:load active="0"/>
+		<BlogTitle client:load></BlogTitle>
+
+		<!-- 插槽 -->
+		<article>
+			<slot></slot>
+		</article> 
+		<Footer></Footer>
+	</body>
+	<style>
+	</style>
+</html>
