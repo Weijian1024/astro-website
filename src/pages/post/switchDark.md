@@ -1,3 +1,3 @@
 ---
-layout: ../blog.astro
+layout: ../../layouts/blog.astro
 ---
