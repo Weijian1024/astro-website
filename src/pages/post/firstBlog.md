@@ -1,5 +1,5 @@
 ---
-layout: "../Blog.astro"
+layout: ../blog.astro
 ---
 这篇博客介绍使用span元素和absolute positiong构建一个汉堡包按钮(hamburger menu)，并使用transform来设计一个从汉堡包按钮到关闭按钮的一个转换。其实一直以来在心底觉得可以很顺利的设计这样的按钮，但是从没有真正练习过，之前也都是借助fontawesome或者svg图标来实现。
 
