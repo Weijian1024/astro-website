@@ -19,7 +19,7 @@
         "time":"6 Feb 2022",
         "title":"title",
         "describe":" In this CSS beginner tutorial,we'll be creating a hamburger menu.",
-        "path":"#"
+        "path":"someCssSkills"
     },
     {
         "id":"4",
@@ -27,7 +27,7 @@
         "time":"6 Feb 2022",
         "title":"title",
         "describe":" In this CSS beginner tutorial,we'll be creating a hamburger menu.",
-        "path":"#"
+        "path":"someCssSkills"
     },
     {
         "id":"5",
@@ -35,6 +35,6 @@
         "time":"30 Jan 2023",
         "title":"HTML CSS JavaScript实现明暗模式切换",
         "describe":"如何利用Css JavaScript实现网站的明暗模式切换,会使用到css自定义属性.",
-        "path":"switchDark"
+        "path":"someCssSkills"
     }
 ]
