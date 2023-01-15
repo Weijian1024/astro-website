@@ -1,3 +1,3 @@
 ---
-layout: ../Blog.astro
+layout: "../Blog.astro"
 ---
