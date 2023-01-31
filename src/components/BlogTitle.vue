@@ -19,7 +19,6 @@
 </template>
 
 <script>
-import axios from "axios";
 export default {
   data() {
     return {
@@ -27,38 +26,20 @@ export default {
       info: {},
       blogs: [
         {
-          id: "5",
+          id: "2",
           tag: "Css",
-          time: "30 Jan 2023",
+          time: "31 Jan 2023",
           title: "HTML CSS JavaScript实现明暗模式切换",
           describe:
             "如何利用Css JavaScript实现网站的明暗模式切换,会使用到css自定义属性.",
           path: "switchDark",
         },
         {
-          id: "2",
+          id: "3",
           tag: "Css",
           time: "6 Feb 2022",
           title: "为伪元素添加点击事件pointer-event等.",
           describe: "Css是门玄学,这篇博客总结了我在开发过程中碰到的问题.",
-          path: "switchDark",
-        },
-        {
-          id: "3",
-          tag: "JavaScript",
-          time: "6 Feb 2022",
-          title: "title",
-          describe:
-            " In this CSS beginner tutorial,we'll be creating a hamburger menu.",
-          path: "switchDark",
-        },
-        {
-          id: "4",
-          tag: "Vue",
-          time: "6 Feb 2022",
-          title: "title",
-          describe:
-            " In this CSS beginner tutorial,we'll be creating a hamburger menu.",
           path: "switchDark",
         },
         {

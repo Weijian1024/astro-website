@@ -1,0 +1,20 @@
+ h2{
+    font-size:20px;
+  }
+  /* md代码块样式 */
+pre{
+    font-family: monospace !important;
+    background-color: #f1f1f1 !important;
+    border-radius: 10px !important;
+    padding: 10px !important;
+    line-height: 1.4 !important;
+  }
+ 
+  /* md行内代码样式 */
+  code{
+    background-color: #f1f1f1 !important;
+    border-radius: 3px !important;
+    padding: 3px !important;
+    font-size: 17px !important;
+  }
+ 

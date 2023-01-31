@@ -14,20 +14,7 @@ html{
 *{
 	transition: background-color 0.3s ease-out;
 }
-/* md代码块样式 */
-pre{
-  font-family: monospace !important;
-  background-color: #fafafa !important;
-  border-radius: 10px !important;
-  padding: 10px !important;
-  line-height: 1.4 !important;
-}
-/* md行内代码样式 */
-code{
-  background-color: #e0e0e0 !important;
-  border-radius: 3px !important;
-  padding: 2px !important;
-}
+
 a{
     text-decoration: none;
     color: unset;
@@ -46,7 +33,7 @@ body.dark-mode {
 }
 
 body {
-  background-color: var(--dark-body-bg, rgb(255, 248, 244));
+  background-color: var(--dark-body-bg, rgb(255, 255, 255));
   /* background:url(../../public/images/white.png); */
   /* background-size: cover; */
 }
