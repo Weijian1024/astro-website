@@ -7,9 +7,7 @@
         href="/components"
         >组件库</a
       >
-      <a :class="active == 2 ? 'nav-item active' : 'nav-item'" href="/live"
-        >整活</a
-      >
+      <a :class="active == 2 ? 'nav-item active' : 'nav-item'" href="/">整活</a>
       <a :class="active == 3 ? 'nav-item active' : 'nav-item'" href="/author"
         >作者</a
       >

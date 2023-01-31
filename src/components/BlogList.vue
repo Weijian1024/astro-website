@@ -134,7 +134,7 @@ export default {
           time: "6 Feb 2022",
           title: "为伪元素添加点击事件pointer-event等.",
           describe: "Css是门玄学,这篇博客总结了我在开发过程中碰到的问题.",
-          path: "switchDark",
+          path: "firstBlog",
         },
       ],
       jsBlogs: [
