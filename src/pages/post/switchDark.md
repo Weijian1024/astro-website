@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/blog.astro
 ---
-##### 第1步:HTML
+### 第1步:HTML
 添加一个按钮的html组件，一般是放在网站`header`上面。
 ```html
 <div class="mode-switch">
@@ -14,7 +14,7 @@ layout: ../../layouts/blog.astro
 <span>🌑</span>
 </div>
 ```
-##### 第2步:CSS
+### 第2步:CSS
 ```css
 .mode-switch {
   display: flex;
@@ -108,7 +108,7 @@ layout: ../../layouts/blog.astro
 }
 </style>
 
-##### 第3步:JavaScript
+### 第3步:JavaScript
 ```js
 window.addEventListener('DOMContentLoaded', function() {
   document.querySelector('.mode-switch__toggle').addEventListener('click', function() {
@@ -126,7 +126,7 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 ```
 当点击toggle按钮的时候，如果body上面有`dark-mode`类，则在body上面移除”dark-mode”类，反之则在body上面增加一个`dark-mode`类。
-##### 第4步:添加自定义属性
+### 第4步:添加自定义属性
 当body上面有`dark-mode`类的时候，往body上面增加一些自定义属性。然后将这些自定义属性通过`var()`函数添加到相应的元素当中，具体需要增加多少自定义属性需要根据网站具体的结构而定。
 ```css
 body.dark-mode {
@@ -155,3 +155,4 @@ header {
 ```css
 transform: translateX(var(--dark-mode-toggle-translate, 0));
 ```
+**最终效果 首页 可见。**
