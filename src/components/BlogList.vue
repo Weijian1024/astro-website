@@ -128,25 +128,24 @@ export default {
             "如何利用Css JavaScript实现网站的明暗模式切换,会使用到css自定义属性.",
           path: "switchDark",
         },
-        {
-          id: "3",
-          tag: "Css",
-          time: "6 Feb 2022",
-          title: "为伪元素添加点击事件pointer-event等.",
-          describe: "Css是门玄学,这篇博客总结了我在开发过程中碰到的问题.",
-          path: "firstBlog",
-        },
-      ],
-      jsBlogs: [
         // {
-        //   id: "3",
-        //   tag: "JavaScript",
+        //   id: "4",
+        //   tag: "Css",
         //   time: "6 Feb 2022",
         //   title: "title",
-        //   describe:
-        //     " In this CSS beginner tutorial,we'll be creating a hamburger menu.",
-        //   path: "switchDark",
+        //   describe: "describe.",
+        //   path: "dragEvent",
         // },
+      ],
+      jsBlogs: [
+        {
+          id: "3",
+          tag: "JavaScript",
+          time: "25 Feb 2023",
+          title: "简易实现JavaScript原生拖拽功能",
+          describe: " 主要使用到了dragover与dragleave这两个事件.",
+          path: "dragEvent",
+        },
       ],
       vueBlogs: [
         // {
@@ -165,7 +164,7 @@ export default {
           id: 1,
           tag: "other",
           time: "20 Jan 2023",
-          title: "我的第一篇博客",
+          title: "我的第一篇博客(空)",
           describe: "主要介绍Astro框架的使用和如何利用Netlify部署项目.",
           path: "firstBlog",
         },

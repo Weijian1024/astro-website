@@ -161,4 +161,4 @@ header {
   transform: translateX(var(--dark-mode-toggle-translate, 0));
 }
 ```
-**最终效果可见首页。**
+**最终效果可见导航栏。**

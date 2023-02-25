@@ -36,11 +36,11 @@ export default {
         },
         {
           id: "3",
-          tag: "Css",
-          time: "6 Feb 2022",
-          title: "为伪元素添加点击事件pointer-event等.",
-          describe: "Css是门玄学,这篇博客总结了我在开发过程中碰到的问题.",
-          path: "switchDark",
+          tag: "JavaScript",
+          time: "25 Feb 2023",
+          title: "简易实现JavaScript原生拖拽功能",
+          describe: "主要使用到了dragover与dragleave这两个事件.",
+          path: "dragEvent",
         },
         {
           id: 1,
