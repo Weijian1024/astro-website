@@ -4,7 +4,7 @@ layout: ../../layouts/blog.astro
 HTML5为所有HTML元素规定了一个`draggable`属性，表示元素是否可以拖动。
 图像和链接的`draggable`属性自动被设置成了true，而其他元素这个属性的默认值都是false。
 
-## 准备好HTML和一张背景图
+## 准备好HTML和一张背景图(图片由纯色背景代替)
 
 <section class="demo-code-border">
     <div class="demo-container">
@@ -41,7 +41,8 @@ border-radius: 12px;
 .demo-box .demo-image{
 height: 100%;
 width: 100%;
-background-image: url(../../../../public/images/girl.jpg);
+/* background-image: url(../../../../public/images/girl.jpg); */
+background-color:#8661fc;
 background-size: cover;
 background-position: center;
 border-radius: 10px;
@@ -186,7 +187,8 @@ border-radius: 12px;
 .box .image{
 height: 100%;
 width: 100%;
-background-image: url(../../../../public/images/girl.jpg);
+/* background-image: url(../../../../public/images/girl.jpg); */
+background-color:#8661fc;
 background-size: cover;
 background-position: center;
 border-radius: 10px;
