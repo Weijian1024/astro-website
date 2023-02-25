@@ -201,7 +201,7 @@ body.dark-mode{
 }
 </style>
 
-主要用到了**dragover**与**dragleave**两个事件，需要注意的是在添加这两个事件时，需要<code>e.preventDefault()</code>来阻止默认事件,否则默认事件会使image松手后回到原位。
+（此方法仅适用于PC端）主要用到了**dragover**与**dragleave**两个事件，需要注意的是在添加这两个事件时，需要<code>e.preventDefault()</code>来阻止默认事件,否则默认事件会使image松手后回到原位。
 
 
 
